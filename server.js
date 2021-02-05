@@ -7,5 +7,7 @@ app.listen(port, () => {
 });
 
 const index = require('./src/routes/index');
+const animes = require("./src/routes/animesRoutes");
 
 app.use("/", index);
+app.use("/animes", animes);
